@@ -15,7 +15,7 @@ func main() {
 
 	fmt.Println("Scheme: ", result.Scheme)
 	fmt.Println("Host: ", result.Host)
-	fmt.Println("Path: ", result.Path)
+	fmt.Println("Path: ", result.Path)	
 	fmt.Println("Port: ", result.Port())
 	fmt.Println("Raw Query: ", result.RawQuery)
 
