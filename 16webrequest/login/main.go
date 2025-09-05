@@ -90,11 +90,11 @@ func userInput() string {
 		if fields[i] == "password" {
 			password, err := term.ReadPassword(int(os.Stdin.Fd()))
 			errorChecker(err)
-			inputs[fields[i]] = string(password)
+			inputs[fields[i]] = strings.TrimSpace(string(password))
 		} else {
 			dataBtye, err := reader.ReadString('\n')
 			errorChecker(err)
-			inputs[fields[i]] = string(dataBtye)
+			inputs[fields[i]] = strings.TrimSpace(string(dataBtye))
 		}
 	}
 
